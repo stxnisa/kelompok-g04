@@ -1,0 +1,310 @@
+/*Bagian Valerie Goldwin, Siti Annisa Rahma dan Wais Al-Qorni*/
+*{ 
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins'
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(107, 112, 92, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.h-logo{
+  width: 50px;
+  margin-top: 8px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+/*Bagian Valerie Goldwin*/
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-heading{
+    background-image: url("../../assets/image/main_heading_background.png");
+    background-size: cover;
+    color: white;
+    text-align: left;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.main-heading h1 {
+    letter-spacing: 8px;
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: 900;
+    width: 550px;
+}
+
+.main-heading p{
+    width: 500px;
+}
+
+.btns-main-head {
+    margin-top: 50px;
+    transition: all 0.5s ease;
+}
+
+.btn-main-head {
+    text-decoration: none;
+    color: white;
+    padding: 15px 24px;
+    border-radius: 5px;
+    opacity: 0.9;
+    display: inline-block;
+}
+
+.explore {
+  background-color: #6B705C;
+}
+
+.shopping {
+  background-color: #A5A58D;
+}
+
+.btn-main-head:hover{
+    opacity: 1;
+    position: relative;
+    bottom: 7px;
+}
+
+/*Bagian Siti Annisa Rahma*/
+.s-heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.s-heading h2 {
+  text-align: center;
+  font-size: 250%;
+}
+
+#slider {
+	overflow: hidden;
+  margin: 0 auto;
+}
+
+#slider figure {
+	width: 300%;
+	position: relative;
+	animation: 9s slider infinite;
+}
+
+#slider figure:hover {
+	animation-play-state: paused;
+}
+
+#slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
+
+.people-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.people {
+  float: left;
+  width: 25%;
+}
+
+.people-icon {
+  position: relative;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  padding: 4vh;
+}
+
+.block-1 {
+  display: flex;
+  flex-direction: row;  
+  height: (100vh-2vh -4vh*2-4vh*2) / 3;
+  gap: 4vh;    
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1
+  flex-basis: (100%)/3;
+}
+
+.box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1
+  flex-basis: (100%)/3;
+}
+
+/*Bagian Verrel Prawira*/
+.form {
+  width: 500px;
+  height: 440px;
+  background: #e9f5db;
+  border-radius: 8px;
+  box-shadow: 0 0 20px -10px #000;
+  margin: 40px 5px 40px 40px;
+  padding: 20px 30px;
+  position: relative;
+}
+
+form h2 {
+  text-align: center;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 450px;
+  color: hsl(240, 8%, 51%);
+  border-bottom: 3px solid #78788c;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+input:focus {
+  border-bottom: 2px solid #78788c;
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+/*Bagian Siti Annisa Rahma*/
+.about-us {
+  width: 575px;
+  height: 440px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-radius: 0px;
+  position: relative;
+  display: block;
+}
+
+.about-us h2 {
+  text-align: left;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 450px;
+  color: hsl(240, 8%, 51%);
+  border-bottom: 3px solid #78788c;
+}
+
+footer {
+  height: 350px;
+  width:  100%;
+  padding: 40px 40px;
+  margin: 40px auto;
+}
+
+.f-r-logo {
+  width: 200px;
+  margin: 5px 0;
+}
+
+footer p {
+  font-weight: normal;
+}
+
+.fa {
+  margin-right: 10px;
+}
